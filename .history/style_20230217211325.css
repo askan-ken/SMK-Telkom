@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar start */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4rem;
+  background-color: black;
+}
+
+.nav-logo {
+  flex: 2;
+}
+
+.nav-logo img {
+  width: 200px;
+}
+
+.nav-links {
+  flex: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+}
+.logout {
+  background: none;
+  color: white;
+  position: relative;
+  right: 20px;
+  cursor: pointer;
+}
+
+.nav-social {
+  flex: 2;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.nav-social img {
+  width: 30px;
+}
+
+/* home start */
+
+.home {
+  display: block;
+  transition: 0.3s;
+}
+.home:active {
+  display: block;
+}
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 4rem;
+  height: 100vh;
+}
+
+.sambutan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sambutan-img {
+  flex: 2;
+}
+
+.sambutan-img img {
+  width: 400px;
+}
+
+.sambutan-desc {
+  flex: 2;
+}
+
+.separator {
+  width: 40px;
+  height: 2px;
+  background: #666666;
+}
+
+.sambutan-desc h1 {
+  padding-bottom: 1rem;
+  font-size: 35px;
+  color: #dd3333;
+}
+
+.sambutan-desc p {
+  width: 400px;
+  padding: 1rem 0;
+  color: #666666;
+}
+
+.nama {
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Gallery sart */
+.gallery {
+  display: none;
+}
+.gallery-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 70px;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 2rem;
+  grid-column-gap: 0.77rem 0rem;
+}
+.images img {
+  width: 300px;
+}
+.upload {
+  font-size: 50px;
+  border: 2px red solid;
+  border-radius: 50%;
+  color: red;
+  cursor: pointer;
+}
+/* Login */
+.login {
+  display: none;
+}
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.login-top {
+  padding: 2rem 0;
+}
+.login-top h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.login-form {
+  border: 2px solid black;
+  border-radius: 10px;
+  height: auto;
+  padding: 2rem 4rem;
+}
+.login-form form {
+  line-height: 40px;
+  padding: 2rem 0;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.login-form label {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  width: 400px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: gray;
+}
+.form-btn {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.form-btn button {
+  width: 100px;
+  height: 40px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 2rem;
+  grid-column-gap: 0.77rem 0rem;
+}
+.images img {
+  width: 300px;
+}
+
+/* Register */
+
+.register {
+  padding: 8rem 0;
+}
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.register-top {
+  padding: 2rem 0;
+}
+.register-top h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.register-form {
+  border: 2px solid black;
+  border-radius: 10px;
+  height: auto;
+  padding: 2rem 4rem;
+}
+.register-form form {
+  line-height: 40px;
+  padding: 2rem 0;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.register-form label {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  width: 400px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: gray;
+}
+.form-btn {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.form-btn button {
+  width: 100px;
+  height: 40px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+/* profile */
+
+.profile-card{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 4rem;
+  border-radius: 10px;
+}
+.profile-card-img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  
+}

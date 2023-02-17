@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100ch;
+  display: flex;
+  justify-content: center;
+  aic
+}
+
+/* navbar start */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4rem;
+  background-color: black;
+}
+
+.nav-logo {
+  flex: 2;
+}
+
+.nav-logo img {
+  width: 200px;
+}
+
+.nav-links {
+  flex: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+}
+.logout {
+  background: none;
+  color: white;
+  position: relative;
+  right: 20px;
+  cursor: pointer;
+}
+
+.nav-social {
+  flex: 2;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.nav-social img {
+  width: 30px;
+}
+
+/* home start */
+
+.home {
+  display: block;
+  transition: 0.3s;
+}
+.home:active {
+  display: block;
+}
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 4rem;
+  height: 100vh;
+}
+
+.sambutan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sambutan-img {
+  flex: 2;
+}
+
+.sambutan-img img {
+  width: 400px;
+}
+
+.sambutan-desc {
+  flex: 2;
+}
+
+.separator {
+  width: 40px;
+  height: 2px;
+  background: #666666;
+}
+
+.sambutan-desc h1 {
+  padding-bottom: 1rem;
+  font-size: 35px;
+  color: #dd3333;
+}
+
+.sambutan-desc p {
+  width: 400px;
+  padding: 1rem 0;
+  color: #666666;
+}
+
+.nama {
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Gallery sart */
+.gallery {
+  display: none;
+}
+.gallery-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 70px;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 2rem;
+  grid-column-gap: 0.77rem 0rem;
+}
+.images img {
+  width: 300px;
+}
+.upload {
+  font-size: 50px;
+  border: 2px red solid;
+  border-radius: 50%;
+  color: red;
+  cursor: pointer;
+}
+/* Login */
+.login {
+  display: none;
+}
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.login-top {
+  padding: 2rem 0;
+}
+.login-top h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.login-form {
+  border: 2px solid black;
+  border-radius: 10px;
+  height: auto;
+  padding: 2rem 4rem;
+}
+.login-form form {
+  line-height: 40px;
+  padding: 2rem 0;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.login-form label {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  width: 400px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: gray;
+}
+.form-btn {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.form-btn button {
+  width: 100px;
+  height: 40px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 2rem;
+  grid-column-gap: 0.77rem 0rem;
+}
+.images img {
+  width: 300px;
+}
+
+/* Register */
+
+.register {
+  padding: 8rem 0;
+}
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.register-top {
+  padding: 2rem 0;
+}
+.register-top h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.register-form {
+  border: 2px solid black;
+  border-radius: 10px;
+  height: auto;
+  padding: 2rem 4rem;
+}
+.register-form form {
+  line-height: 40px;
+  padding: 2rem 0;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.register-form label {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  width: 400px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: gray;
+}
+.form-btn {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.form-btn button {
+  width: 100px;
+  height: 40px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Profile Card */
+.profile {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-card {
+  width: 650px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 4rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.profile-card::before {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.15);
+  inset: 0;
+  transform: rotate(-5deg);
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.profile-card-img img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.profile-card,
+.profile-card-desc,
+.profile-card__info {
+  text-align: center;
+}
+.profile-card-desc a {
+  font-size: 10px;
+}
+
+.ocation .location-icon {
+  position: absolute;
+  margin-top: 10px;
+  top: 0.82rem;
+  left: 1.4rem;
+  font-size: 1.3rem;
+  opacity: 0.5;
+}
+
+.profile-card-desc h1 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.profile-card-desc h1 + div {
+  font-size: calc(1rem * 0.8);
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.profile-card__info {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  margin: 10px;
+  gap: 50px;
+  font-size: 1rem;
+}
+
+.profile-card__info div {
+  gap: 10px;
+}
+
+.profile-card-social {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+.profile-card-social > div {
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: calc(1rem * 0.8);
+}
+.profile-card-social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.profile-card-social-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  width: 50px;
+  height: 50px;
+  background: #ff74b1;
+  border-radius: 100px;
+  transition: all 0.5s;
+}
+
+.profile-card-social-btn a:hover {
+  background: #aac4ff;
+  transition: scale(1.1);
+}
+
+.profile-card-info {
+  display: flex;
+  text-align: center;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.profile-card-btn button {
+  background: #ff74b1;
+  padding: 1rem;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: background 0.5s;
+  border: none;
+}
+
+.profile-card-btn button:hover {
+  background: #aac4ff;
+  cursor: pointer;
+}
